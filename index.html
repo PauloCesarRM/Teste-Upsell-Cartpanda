@@ -3,180 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeira Aula</title>
-
-    <!-- Script de Upsell Externo Cartpanda -->
-    
-        <script src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/libs/ocu-external.js"> </script>
-        <script> new OcuExternal(); </script>
+    <title>Teste Upsell Cartpanda</title>
+            <script src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/libs/ocu-external.js"> </script>
+            <script> new OcuExternal(); </script>
     <style>
         body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            background-color: #ffffff;
-        }
-        .alerta {
-            background-color: #ff0000;
-            color: #fff;
-            font-weight: bold;
-            padding: 12px;
-            font-size: 18px;
-        }
-        h1 {
-            margin-top: 40px;
-            font-size: 28px;
-            font-weight: bold;
-            padding: 0 15px;
-        }
-        h1 span {
-            color: #ffcc00;
-        }
-        .emoji {
-            font-size: 40px;
-            margin: 10px 0 20px;
-        }
-        .video-container {
+            font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
-            margin-bottom: 15px;
-            padding: 0 15px;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
         }
-        .video-container vturb-smartplayer {
-            display: block;
-            margin: 0 auto;
-            width: 100%;
-            max-width: 400px;
+        .container {
+            text-align: center;
         }
-
-        /* Ocultar os botões inicialmente */
-        #callaction-buttons {
-            display: none;
-            padding: 20px 15px;
-            font-family: 'DM Sans', sans-serif;
-        }
-
-        /* Animações */
-        .fade-in {
-            animation: fadeIn 1s ease-in-out forwards;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Botão Aceitar */
-        .button-accept {
-            padding: 17px 32px;
-            line-height: 22px;
-            border-radius: 12px;
-            font-weight: 700;
-            background-color: rgb(52, 226, 60);
-            color: rgb(255, 255, 255);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            border: none;
-            font-size: 18px;
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-            display: block;
+        a.button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
             text-decoration: none;
-        }
-        .button-accept:hover {
-            background-color: rgb(42, 206, 50);
-            transform: translateY(-2px);
-        }
-
-        /* Botão Recusar */
-        .button-deny {
-            padding: 17px 32px;
-            line-height: 22px;
-            border-radius: 12px;
-            font-weight: 700;
-            background-color: rgb(255, 0, 0);
-            color: rgb(255, 255, 255);
+            font-size: 16px;
+            border-radius: 5px;
             cursor: pointer;
-            transition: all 0.3s ease;
-            border: none;
-            font-size: 18px;
-            width: 100%;
-            max-width: 600px;
-            margin: 15px auto 0;
-            display: block;
-            text-decoration: none;
         }
-        .button-deny:hover {
-            background-color: rgb(200, 0, 0);
-            transform: translateY(-2px);
+        .accept {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .decline {
+            background-color: #f44336;
+            color: white;
         }
     </style>
 </head>
-
 <body>
-    <div class="alerta">
-        NÃO SAIA DESSA PÁGINA — ESTAMOS CRIANDO SEU ACESSO. <br>
-        FECHAR AGORA PODE GERAR ERROS NO SEU PEDIDO.
+    <div class="container">
+        <h1>Teste de Upsell Cartpanda</h1>
+        <p>Você deseja aceitar esta oferta?</p>
+        <a class="button accept" href="https://webcerto.mycartpanda.com/ex-ocu/next-offer/BaYBLDP26o?accepted=yes">Aceitar Oferta</a>
+        <a class="button decline" href="httpshttps://webcerto.mycartpanda.com/ex-ocu/next-offer/BaYBLDP26o?accepted=no">Recusar Oferta</a>
     </div>
-
-    <h1>VEJA ABAIXO SUA<br><span>PRIMEIRA AULA</span>!</h1>
-    <div class="emoji">👇</div>
-
-    <div class="video-container">
-        <vturb-smartplayer id="vid-690bf46f633fb130a37a75a0" style="display:block; width:100%; max-width:400px;"></vturb-smartplayer>
-        <script type="text/javascript">
-            var s = document.createElement("script");
-            s.src = "https://scripts.converteai.net/0d9de295-0c21-45b7-be0e-51b271174800/players/690bf46f633fb130a37a75a0/v4/player.js";
-            s.async = true;
-            document.head.appendChild(s);
-        </script>
-    </div>
-
-    <!-- Botões exibidos somente após o tempo programado -->
-    <div id="callaction-buttons">
-        <div>
-        <a href="https://webcerto.mycartpanda.com/ex-ocu/next-offer/BaYBLDP26o?accepted=yes" class="button-accept" id="acceptButton">
-            Entrar na Comunidade Caligrafia Premium agora
-        </a>
-        </div>
-
-    <div>
-        <a href="https://webcerto.mycartpanda.com/ex-ocu/next-offer/BaYBLDP26o?accepted=no" class="button-deny" id="denyButton">
-            Não, não quero video aulas e nem consultoria no WhatsApp
-        </a>
-    </div>
-    
-    </div>
-    
-    <!-- Script para exibir os botões no tempo do vídeo -->
-    <script>
-        function iniciarControle() {
-            if (!window.smartplayer || !window.smartplayer.instances || window.smartplayer.instances.length === 0) {
-                setTimeout(iniciarControle, 1000);
-                return;
-            }
-
-            const player = window.smartplayer.instances[0];
-            const video = player.video || player.instance?.video;
-            if (!video) return;
-
-            const TEMPO_PITCH = 199; // Tempo em segundos
-            let botoesMostrados = false;
-
-            setInterval(() => {
-                if (video.currentTime >= TEMPO_PITCH && !botoesMostrados) {
-                    botoesMostrados = true;
-                    const botoesDiv = document.getElementById('callaction-buttons');
-                    botoesDiv.style.display = 'block';
-                    botoesDiv.classList.add('fade-in');
-                    botoesDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                }
-            }, 1000);
-        }
-
-        setTimeout(iniciarControle, 3000);
-    </script>
 </body>
 </html>
